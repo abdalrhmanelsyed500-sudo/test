@@ -1095,7 +1095,7 @@ def cmd_post():
     POST_DIR.mkdir(exist_ok=True)
     title_path = POST_DIR / "_title_card.png"
     if not title_path.exists():
-        ff = next(_glob.glob(str(_ENV / "pylibs" / "imageio_ffmpeg" / "binaries" / "ffmpeg-linux64-*")), None)
+        ff = next(iter(_glob.glob(str(_ENV / "pylibs" / "imageio_ffmpeg" / "binaries" / "ffmpeg-linux64-*"))), None)
         if ff:
             import subprocess
             font = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
