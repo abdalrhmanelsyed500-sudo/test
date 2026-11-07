@@ -201,7 +201,7 @@ def world_sky_canvas(px):
     zenith = np.array([8, 34, 44], np.float32)
     mid    = np.array([20, 58, 62], np.float32)
     rose   = np.array([112, 74, 60], np.float32)
-    horizon= np.array([196, 132, 76], np.float32)
+    horizon= np.array([212, 146, 88], np.float32)
     ember  = np.array([118, 66, 36], np.float32)
     for y in range(h):
         t = y / (h - 1)
@@ -222,7 +222,7 @@ def sky_canvas(px):
     zenith = np.array([8, 34, 44], np.float32)
     mid    = np.array([20, 58, 62], np.float32)
     rose   = np.array([112, 74, 60], np.float32)
-    horizon= np.array([196, 132, 76], np.float32)
+    horizon= np.array([212, 146, 88], np.float32)
     ember  = np.array([118, 66, 36], np.float32)
     for y in range(h):
         t = y / (h - 1)
@@ -285,7 +285,7 @@ def build_world(sc):
     out = nt.nodes.new("ShaderNodeOutputWorld")
     env = nt.nodes.new("ShaderNodeTexEnvironment")
     env.image = WORLD_SKY_IMG[0]
-    bg.inputs["Strength"].default_value = 0.5
+    bg.inputs["Strength"].default_value = 0.75
     nt.links.new(env.outputs["Color"], bg.inputs["Color"])
     nt.links.new(bg.outputs["Background"], out.inputs["Surface"])
 
@@ -621,8 +621,11 @@ def build_lights(sc):
     p_flash  = point("P_FLASH",  ( 4.6,   2.4,  1.6),  0.0, (1.0, 0.92, 0.75), 1.2)
     p_dawn   = point("P_DAWN",   ( 6.3,   1.1,  1.6),  0.0, (1.0, 0.85, 0.66), 0.7)
     p_macro  = point("P_MACRO",  ( 1.5,  -3.7,  1.5),  0.0, (0.82, 0.90, 1.0), 0.45)
+    p_fill   = point("P_FILL",   ( 0.0,   0.5,  4.6), 150.0, (0.62, 0.72, 0.80), 0.6)
+    p_engine = point("P_ENGINE", ( 4.6,   2.4,  0.6),  0.0, (1.00, 0.62, 0.30), 0.7)
     return {"sun": sunL, "p_cradle": p_cradle, "p_seed": p_seed, "p_term": p_term,
-            "p_core": p_core, "p_flash": p_flash, "p_dawn": p_dawn, "p_macro": p_macro}
+            "p_core": p_core, "p_flash": p_flash, "p_dawn": p_dawn, "p_macro": p_macro,
+            "p_fill": p_fill, "p_engine": p_engine}
 
 def key_energy(light, keys):
     for f, v in keys:
@@ -658,8 +661,8 @@ def build_camera(sc):
         (456,  (6.4, -4.0, 2.6),    (2.0, 40.0, 5.6), 58),
         (457,  (2.1, 2.35, 5.15),   (2.15, 1.25, 4.95), 38),
         (536,  (1.85, 1.95, 5.05),  (2.15, 1.27, 5.0), 46),
-        (537,  (0.35, 3.05, 5.75),  (0.0, 0.95, 4.62), 46),
-        (624,  (-0.15, 2.75, 5.45), (0.0, 0.98, 4.66), 50),
+        (537,  (2.30, 2.20, 6.55),  (-0.35, 0.30, 4.60), 34),
+        (624,  (1.85, 1.75, 6.00),  (-0.15, 0.55, 4.70), 37),
         (625,  (1.9, 1.85, 5.0),    (-0.6, 0.3, 4.8), 44),
         (704,  (1.35, 1.35, 5.0),   (-1.9, 0.45, 4.55), 48),
         (705,  (-2.6, -2.75, 1.95), (4.6, 2.4, 1.35), 42),
@@ -670,8 +673,8 @@ def build_camera(sc):
         (968,  (1.45, -4.12, 0.74), (0.83, -2.98, 0.60), 73),
         (969,  (-6.2, -8.5, 3.3),   (3.5, 1.0, 1.2), 36),
         (1076, (-4.6, -6.6, 2.9),   (4.6, 1.6, 0.9), 40),
-        (1077, (5.35, -0.35, 1.62), (6.35, 1.15, 1.10), 48),
-        (1180, (5.55, -0.1, 1.5),   (6.35, 1.15, 1.16), 50),
+        (1077, (4.75, -1.35, 1.95), (6.35, 1.15, 1.02), 38),
+        (1180, (4.95, -1.10, 1.80), (6.35, 1.15, 1.10), 40),
         (1181, (2.3, -3.3, 1.5),    (5.5, 1.8, 1.15), 46),
         (1320, (1.6, -2.45, 1.35),  (5.5, 1.9, 1.35), 50),
     ]
@@ -741,7 +744,12 @@ def animate_timeline(sc, L, M):
     key_energy(L["p_term"],   [(457, 0.0), (459, 14.0), (462, 62.0), (705, 62.0), (730, 36.0), (760, 18.0), (800, 4.0), (815, 0.0)])
     key_energy(L["p_core"],   [(537, 0.0), (543, 22.0), (560, 34.0), (610, 20.0), (660, 27.0), (704, 22.0), (760, 15.0), (800, 9.0), (815, 0.0)])
     key_energy(L["p_flash"],  [(798, 0.0), (800, 320.0), (804, 90.0), (812, 18.0), (820, 0.0)])
-    key_energy(L["p_dawn"],   [(1077, 0.0), (1120, 58.0), (1320, 62.0)])
+    key_energy(L["p_dawn"],   [(1077, 0.0), (1120, 95.0), (1320, 105.0)])
+    key_energy(L["p_engine"], [(795, 0.0), (800, 210.0), (870, 210.0), (878, 150.0), (881, 0.0)])
+    # rocket engine light rides the rocket up (same loc keys as ROCKET with slight offset)
+    key_loc(L["p_engine"],   [(800, (4.6, 2.4, 0.7)), (806, (4.6, 2.4, 0.75)), (815, (4.6, 2.4, 1.33)),
+                              (825, (4.6, 2.4, 2.65)), (835, (4.6, 2.4, 4.95)), (845, (4.6, 2.4, 8.15)),
+                              (855, (4.6, 2.4, 11.95)), (865, (4.6, 2.4, 16.15)), (875, (4.6, 2.4, 20.35)), (880, (4.6, 2.4, 24.0))])
     key_energy(L["p_macro"],  [(870, 0.0), (881, 24.0), (936, 32.0), (968, 27.0), (975, 0.0)])
 
     # ---------- material emission animation ----------
@@ -853,8 +861,8 @@ def animate_timeline(sc, L, M):
     # ---------- S06-C sprout ----------
     stem, leaf1, leaf2 = O["SPROUT_STEM"], O["SPROUT_LEAF1"], O["SPROUT_LEAF2"]
     key_scale(stem,  [(1000, (0.001, 0.001, 0.001)), (1085, (1, 1, 1)), (1180, (1, 1, 1))])
-    key_scale(leaf1, [(1030, (0.001, 0.001, 0.001)), (1120, (1, 1, 1)), (1180, (1, 1, 1))])
-    key_scale(leaf2, [(1035, (0.001, 0.001, 0.001)), (1125, (1, 1, 1)), (1180, (1, 1, 1))])
+    key_scale(leaf1, [(1030, (0.001, 0.001, 0.001)), (1120, (0.28, 0.105, 0.13)), (1180, (0.28, 0.105, 0.13))])
+    key_scale(leaf2, [(1035, (0.001, 0.001, 0.001)), (1125, (0.28, 0.105, 0.13)), (1180, (0.28, 0.105, 0.13))])
 
 # ============================================================================
 # SCENE ORCHESTRATION
@@ -882,13 +890,14 @@ def build_scene():
     L = build_lights(sc)
     cam = build_camera(sc)
     animate_timeline(sc, L, M)
-    INTERIOR_BOOST = 4.2
+    INTERIOR_BOOST = 6.0
+    BOOST_SKIP = ("P_ENGINE", "P_FILL")
     for li in bpy.data.lights:
-        if li.type != 'POINT':
+        if li.type != 'POINT' or li.name in BOOST_SKIP:
             continue
         li.energy *= INTERIOR_BOOST
     for ob in bpy.data.objects:
-        if ob.type != 'LIGHT' or ob.data.type != 'POINT':
+        if ob.type != 'LIGHT' or ob.data.type != 'POINT' or ob.data.name in BOOST_SKIP:
             continue
         ad = ob.animation_data
         if not ad or not ad.action:
@@ -926,7 +935,7 @@ def setup_render(sc, preset):
     scn.render.image_settings.file_format = 'PNG'
     scn.render.image_settings.color_mode = 'RGB'
     scn.render.image_settings.compression = 80
-    scn.view_settings.exposure = -1.75
+    scn.view_settings.exposure = -0.9
     return scn
 
 # ============================================================================
