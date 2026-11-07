@@ -1,0 +1,362 @@
+================================================================================
+PALACE  —  A Short Film
+Written, directed and produced for procedural Blender-Python production
+Total running time: exactly 300.0 seconds (15 shots)
+================================================================================
+
+--------------------------------------------------------------------------------
+PHASE 1 — FIVE ORIGINAL CONCEPTS, EVALUATED
+--------------------------------------------------------------------------------
+
+CONCEPT 1 — "The Cartographer of Lost Sounds"
+  A sound recordist travels a coastal city cataloguing the sounds of things
+  about to disappear (a telephone box, a bakery oven, a funicular) before they
+  are gone; his recorder dies with one recording left to make.
+  Originality .......... 9/10   Emotional impact ... 8/10
+  Narrative complexity . 8/10   Visual potential ... 8/10
+  Ending strength ...... 7/10   Feasibility ........ 4/10 (many locations)
+  Verdict: Beautiful premise, but demands many distinct locations and heavy
+  ambient audio design; a single-location piece will out-perform it on air.
+
+CONCEPT 2 — "The Tideworker"
+  In a drowned town revealed only at low tide, a man walks the seabed each
+  dawn to scavenge what the sea returns, until one morning it returns
+  something he recognizes.
+  Originality .......... 8/10   Emotional impact ... 7/10
+  Narrative complexity . 7/10   Visual potential ... 9/10 (strong silhhouettes)
+  Ending strength ...... 6/10   Feasibility ........ 4/10 (large tidal sets)
+  Verdict: Visually gorgeous but expensive to stage; ending drifts toward
+  melancholy cliché. Rejected on production grounds.
+
+CONCEPT 3 — "Signal"
+  A night radio operator on a tidal island intercepts the same distress call
+  every night for a year, and rows out to find its source.
+  Originality .......... 7/10   Emotional impact ... 6/10
+  Narrative complexity . 8/10   Visual potential ... 7/10
+  Ending strength ...... 8/10   Feasibility ........ 5/10 (sea, boat, island,
+  interior console — 4 sets plus VFX rain/waves)
+  Verdict: Strong hook, but tension design needs sound-mix sophistication that
+  a CPU-rendered 5-minute piece cannot fully honor; leans thriller over heart.
+
+CONCEPT 4 — "The Migrators"
+  In a high-rise where floor numbers have been erased, an elevator operator
+  rides to floors that no longer exist, carrying parcels addressed to people
+  who moved away years ago.
+  Originality .......... 9/10   Emotional impact ... 7/10
+  Narrative complexity . 9/10   Visual potential ... 7/10
+  Ending strength ...... 7/10   Feasibility ........ 5/10 (vertical city set,
+  multi-floor continuity)
+  Verdict: Inventive, but its emotional logic is opaque without dialogue;
+  too abstract for the target viewer in 5 minutes.
+
+CONCEPT 5 — "PALACE" (SELECTED)
+  On the night his failing seaside cinema screens its final show to an empty
+  house, an aging projectionist discovers who has been sitting in Row F all
+  along — and passes on the one thing he has left.
+  Originality .......... 8/10   Emotional impact ... 9/10
+  Narrative complexity . 8/10   Visual potential ... 10/10 (beam of light,
+  dust, velvet seats, neon sign, rain, dawn)
+  Ending strength ...... 9/10   Feasibility ........ 9/10 (ONE location,
+  two characters, no dialogue, all procedural)
+  Verdict: One location, two characters, a wordless story told in light.
+  Selected.
+
+WHY IT WINS: the cinema is the perfect bottle for visual storytelling —
+light literally is the medium (projection). The empty house / one small
+viewer arc is told through composition, color and sound rather than dialogue.
+The paper-boat motif plants, pays off and resolves. It avoids every forbidden
+trope: no death reveals, no letters, no time travel (the 1953 beat is a
+memory, not a plot device), no lost child rescue plot (the boy is not in
+danger; he is simply the last audience).
+
+--------------------------------------------------------------------------------
+PHASE 2 — LOGLINE, THEME, MOTIFS
+--------------------------------------------------------------------------------
+
+LOGLINE
+  On the night his failing seaside cinema screens its final show to an empty
+  house, an aging projectionist discovers his one loyal viewer has been living
+  above the theater all along — and decides what, and who, the last show is
+  really for.
+
+THEME
+  Light is a form of care. A public ritual performed faithfully for strangers
+  (and one secret child) is never wasted, even if nobody buys a ticket.
+  Cinema survives not as a building but as a seat that gets sat in.
+
+MOTIFS (planted -> paid off)
+  1. PAPER BOATS. Elias used to fold a program into a boat for every premiere.
+     Act 1: he finds a child's small boat on Row F, center. He assumes a
+     litterbug. Act 4: the boy folds the Farewell handbill into the same
+     boat-shape and leaves it on F7. Elias realizes the “litter” was a message
+     — and this time it is one he is meant to receive.
+  2. ROW F, SEAT 7. Composed dead-center in three separate shots; never named
+     in dialogue (there is none). The final shot lands sunlight on it.
+  3. THE LIT ATTIC WINDOW. Shot 1 (exterior, dawn): one window above the
+     Palace glows warm while the sign is dead. Recalled in Shot 10 when the
+     boy slips in. Recalled once more in the final exterior. It was him,
+     every night, watching the beam through the floorboards.
+  4. THE PROJECTIONIST'S HANDS. Close-ups of thread, oil, the big lever.
+     Craft as devotion.
+  5. COLD/WARM. Exterior = cold teal; interior house = cold grey until the
+     beam is lit; beam + boy's raincoat + screen = the only warm/saturated
+     notes in the film. Color literally follows feeling.
+  6. RAIN. Starts as drizzle in Act 3, full storm in Act 4; during the show
+     it falls silent (mix duck), so the film-within-the-film sound design sits
+     forward — the boy's world narrows to the screen.
+
+--------------------------------------------------------------------------------
+PHASE 3 — SCREENPLAY (wordless; intertitles only at the very end)
+--------------------------------------------------------------------------------
+
+FADE IN:
+
+EXT. SEASIDE PROMENADE — DAWN
+A shuttered resort. Gulls. A boarded arcade. The PALACE CINEMA marquee hangs
+dead at the end of the street. One attic window above the facade glows faint
+amber. A hand-painted banner: "TONIGHT — FINAL SCREENING. THANK YOU FOR
+61 YEARS."
+
+ELIAS (60s), forearm brace of keys on a canvas satchel, bicycle clips, walks
+the empty promenade toward the cinema, thermos in one hand, a paper bag of
+pull-up letter tiles under the other arm. He does not hurry. He never
+hurries.
+
+INT. BOX OFFICE / LOBBY — MORNING
+Keys. The lock fights him, then gives. The door exhales dust and cold air.
+He steps into the dark lobby. Velvet shapes wait in the auditorium beyond the
+doors like sleeping animals. He touches the brass ticket lamp — dead — and
+sets down the OPEN sign anyway, at the counter, where nobody will see it.
+
+INT. PROJECTION BOOTH — MORNING
+He climbs. The booth is a chapel: two projectors ("The Empress" — the live
+one), reels like metal halos, an oil can, a stool, and on the wall a 1953
+photograph: the young PALACE ablaze with bulbs, a boy in shorts held by the
+hand in front of it. Elias polishes The Empress with a rag. His reflection
+swims across the porthole glass, over the empty seats below.
+
+INT. AUDITORIUM — LATE MORNING
+He sweeps rows with a wide broom. Midway down Row F: a SMALL PAPER BOAT,
+folded from a bus ticket, nudged against a seat leg. He crouches. Turns it
+over. Nothing written. He looks up the raked rows toward the lit attic hatch
+in the ceiling. Says nothing. Pockets the boat. As he leaves: ECU, his shoe
+uncovers a pattern in the dust — SMALL BARE FOOTPRINTS beneath the seat. He
+stops. Looks at the booth ladder. (The audience was overhead.)
+
+INT. BOX OFFICE — AFTERNOON
+He inks the date stamp — FINAL. He opens the ledger: the advance bookings
+page for tonight is blank. Every page for weeks is blank. He tears yesterday's
+blank page out of habit, then laughs once, quietly, at himself. He tears it
+into strips, small and precise, and folds them into one neat pile.
+(He cannot bring himself to fold THESE into a boat.)
+Clock ticks. First drops of rain stipple the high lobby windows.
+
+EXT. MARQUEE — LATE AFTERNOON
+On a ladder in rising wind, he swaps the last letters by hand:
+T O N I G H T   O N L Y . Thunder leans across the bay. He climbs down with
+the old "CLOSED" letters stacked like shingles, and does not look back at
+the attic window. (He knows it is lit. He has known for weeks.)
+
+INT. PROJECTION BOOTH — EVENING
+He threads tonight's film: an ancient, hand-tinted print, THE SEA AND PAPA,
+because it was the first film the Palace ever showed in 1953. He checks the
+lamp. Mains THUNK. The motor sighs awake. Through the porthole: 800 empty
+seats. His ghost-face hangs in the dark glass over them. He sinks onto the
+stool. On the wall clock: 7:28.
+
+Nobody comes. The clock is the only audience. Rain needles the roof. He puts
+his hand on the big changeover lever — the ritual matters even if nobody
+sees it. He pulls. The lamp dies to standby. The house goes black. 7:30.
+The last show of the Palace.
+
+INT. LOBBY — NIGHT
+The stage/side door bangs open on a gust. A BOY (9), soaked to a second
+skin, yellow raincoat glowing in emergency lamp-light, breathes in ragged
+gusts. In his fist: a crumpled BUS TICKET — one coin's worth — and the
+farewell banner handbill he has peeled and folded small. He sees Elias. He
+is not ashamed. He is ready: he holds the coin out on a flat palm.
+
+Elias looks at the coin. At the boy. At the locked auditorium doors. He
+takes a wax-pencil stub and, on the back of a cardboard ticket roll, writes
+SEAT F7 — and tears it free as an ADMIT ONE stub. He presses it into the
+boy's palm, curls the boy's fingers over it, and — for the first time all
+day — something in his face unknots. He opens the house doors.
+
+INT. AUDITORIUM — NIGHT
+He dims the houselights. The motor takes. The beam CUTS the dark — a solid
+amber blade full of dust — and lands on the screen. The first frame
+blooms: a painted sea, waves rolling in watercolor time. The boy at F7
+does not sit so much as arrive, planted, boots up on nothing, coat dripping
+an arc of rain-water onto Row F carpet.
+
+INT. AUDITORIUM / MEMORY — NIGHT (INTERCUT)
+Close on the boy's face — rain-streaked, held open, lit by the living
+picture. Close on Elias's eye at the booth porthole, glasses catching the
+picture-light.
+
+MEMORY — 1953 (SEPIA): the original opening night. A younger projectionist
+— ELIAS'S FATHER — hands small Elias up so he can see over the balustrade. A
+lamp-lit marquee: NOW SHOWING — THE SEA AND PAPA. Little Elias, held by two
+warm hands, gasps as the beam ignites over a thousand hats and heads. The
+camera pushes in on his face, which is the same face as the boy in F7.
+MATCH CUT on the eyes.
+
+BACK TO NOW: the boy's feet swing, not reaching the floor. The paper boat
+(the one Elias pocketed) sits on the armrest beside him where Elias,
+wordless, has placed it earlier — wait. Clarity: Elias set the found boat
+on F7's armrest before the show. The boy's eyes flick to it. Reverent. He
+knows it means him.
+
+INT. AUDITORIUM — NIGHT (END OF REEL)
+The final frame holds. The leader flaps, flaps, flaps — white. The motor
+spins down with a long sigh. Dark. Rain, suddenly audible again, very far
+away. The boy does not move. Then the CHAIR SQUEAK. He is standing at F7.
+On the seat: the farewell handbill, now folded — with quick, practiced,
+precise hands — into a perfect SMALL PAPER BOAT, the same fold Elias
+invented. He looks up toward the booth. Raises the boat one inch. Puts it
+down tenderly on F7's armrest. Pulls up his hood. Leaves the way he came,
+door swinging.
+
+INT. BOOTH / AUDITORIUM — DEEP NIGHT
+Elias comes down with the work-light. Stops at F7. Reads the boat. Picks it
+up like it weighs something. Walks it up to the booth, sets it beneath the
+1953 photograph, next to The Empress. He does the shutdown ritual — lamp,
+motor, breakers — one by one, hands steady. Beside the door he hangs the
+keys on the old hook labeled simply OPEN. Click.
+
+INT. AUDITORIUM — DAWN (NEXT MORNING)
+Sunrise through the lobby glass finds the auditorium in shafts. Dust motes.
+800 empty seats. Row F — one seat occupied by a single ARCH of
+sunlight carrying, for a few seconds, the white paper boat on its armrest.
+Then cloud, and the shaft slides off and is gone.
+
+EXT. PALACE CINEMA — MORNING
+Wide, slow dolly-out: the dead marquee, the sea beyond, gulls. One attic
+window, shuttered for the last time. On the doors, a hand-taped note, in
+Elias's careful block letters: "THANK YOU FOR 61 YEARS — THE MANAGEMENT."
+He stands small on the pavement with his satchel. He does not lock the
+doors — there is nothing left to lock. He walks toward the camera, passes
+out of frame left. Hold on the building.
+
+CUT TO BLACK.
+
+A single projector CLICK in the dark.
+
+TITLE CARD (hand-lettered cream on black, fades up):
+    PALACE
+    for everyone who ever had a favorite seat
+
+END.
+
+--------------------------------------------------------------------------------
+PHASE 4 — SHOT-BY-SHOT PRODUCTION PLAN (EXACT 300.0s)
+--------------------------------------------------------------------------------
+FPS note: rendered at 8 unique fps (PRESET A) and conformed to 24 fps by frame
+triplication at assembly. Timing is therefore authored at 0.125s granularity.
+
+| #  | IN–OUT (s)    | DUR | SIZE/ ANGLE        | CAMERA MOVE              |
+|----|---------------|-----|--------------------|--------------------------|
+| 01 | 000.0–012.0   | 12  | EXT wide, low-ish  | slow crane-down drift    |
+|    | Establishes promenade, dead PALACE, attic window (lit) | | |
+|    | LIGHT: cold blue pre-dawn, attic amber pinpoint        | | |
+|    | SOUND: sea, gull (6s), neon FITZ (10.5s)               | | |
+|    | TRANSITION: hard cut -> S02                            | | |
+| 02 | 012.0–030.0   | 18  | EXT profile track  | lateral track w/ Elias   |
+|    | LIGHT: flat grey-blue morning, rim on figure           | | |
+|    | SOUND: footsteps (0.62s cadence), wind, sea             | | |
+|    | TRANSITION: cut -> S03                                  | | |
+| 03 | 030.0–044.0   | 14  | INT ECU keys -> WS | push-in through door     |
+|    | LIGHT: interior pitch black, doorway wedge of grey      | | |
+|    | SOUND: keys, lock, creak, room tone, drips              | | |
+|    | TRANSITION: cut -> S04                                  | | |
+| 04 | 044.0–064.0   | 20  | INT booth, CU hands| slow dolly in to photo   |
+|    | LIGHT: booth tungsten pool, dust                        | | |
+|    | SOUND: ladder rungs, oil can, thread clicks             | | |
+|    | TRANSITION: cut -> S05                                  | | |
+| 05 | 064.0–086.0   | 22  | INT house, WS->ECU | sweep-pan rows; ECU boat |
+|    | LIGHT: cold ambient, god-ray stubs (fake cones)          | | |
+|    | SOUND: broom, paper rustle, footstep ECU, silence beat  | | |
+|    | TRANSITION: cut -> S06                                  | | |
+| 06 | 086.0–104.0   | 18  | INT box office, CU | locked-off, slow tick    |
+|    | LIGHT: ledger lamp pool, grey window                     | | |
+|    | SOUND: clock, stamp thunk, page, first rain              | | |
+|    | TRANSITION: cut -> S07                                  | | |
+| 07 | 104.0–130.0   | 26  | EXT marquee, low   | static wide; letters land|
+|    | LIGHT: storm light, lightning bounce at 112/118/127      | | |
+|    | SOUND: rain full, thunder x3, ladder clank, letters x3   | | |
+|    | TRANSITION: cut -> S08                                  | | |
+| 08 | 130.0–154.0   | 24  | INT booth, MS      | slow orbital drift       |
+|    | LIGHT: mains clunk; one work-lamp; screen ghost glow      | | |
+|    | SOUND: mains clunk, warm-up rattle, rain on roof          | | |
+|    | TRANSITION: cut -> S09                                  | | |
+| 09 | 154.0–172.0   | 18  | INT booth, CU lever| tight static; rain duck   |
+|    | LIGHT: near-dark; lever glint                            | | |
+|    | SOUND: clock, distant thunder, ONE low chime (7:30)      | | |
+|    | TRANSITION: cut -> S10                                  | | |
+| 10 | 172.0–192.0   | 20  | INT lobby, MS/OTs  | handheld-ish drift        |
+|    | LIGHT: emergency lamp amber wedge; boy rimmed            | | |
+|    | SOUND: door bang, rain gust, dripping, coin CLINK, ticket| | |
+|    | TRANSITION: cut -> S11                                  | | |
+| 11 | 192.0–216.0   | 24  | INT house, WS/CU   | slow push from booth-door |
+|    | LIGHT: HOUSE BLACK -> beam ignites (key light event)      | | |
+|    | SOUND: houselight hum, motor start, steady clatter, wash | | |
+|    | TRANSITION: cut -> S12                                  | | |
+| 12 | 216.0–240.0   | 24  | INT/MEMORY intercut| match-cut eyes; 1953 sepia|
+|    | LIGHT: picture-light on faces; sepia memory               | | |
+|    | SOUND: clatter; sepia = muffled roar + brighter projector | | |
+|    | TRANSITION: dissolve-feel cut (single frame white leader) | | |
+| 13 | 240.0–258.0   | 18  | INT house, WS/CU   | static F7 two-shot-ish    |
+|    | LIGHT: dying beam -> dark; emergency spill                | | |
+|    | SOUND: leader flaps, spin-down, 2s SILENCE, folds, creak  | | |
+|    | TRANSITION: cut -> S14                                  | | |
+| 14 | 258.0–280.0   | 22  | INT booth/house    | slow walk follow, hands   |
+|    | LIGHT: work-lamp; vigil of switches                      | | |
+|    | SOUND: boots, paper pick-up, breakers, keys on hook       | | |
+|    | TRANSITION: cut -> S15                                  | | |
+| 15 | 280.0–300.0   | 20  | EXT dawn wide -> hold | dolly out; sunbeam shaft |
+|    | LIGHT: golden break in cloud; F7 sun-coin                | | |
+|    | SOUND: gulls, wind; 297.5 ONE projector CLICK; silence    | | |
+|    | END CARD: "PALACE — for everyone who ever had a favorite seat"|
+
+TOTALS: 12+18+14+20+22+18+26+24+18+20+24+24+18+22+20 = 300.0s exactly.
+Unique frames @8fps: 2400. Frame ranges: S01 1, S02 97, S03 241, S04 353,
+S05 513, S06 689, S07 833, S08 1041, S09 1233, S10 1377, S11 1537, S12 1729,
+S13 1921, S14 2065, S15 2241 -> END 2400.
+
+--------------------------------------------------------------------------------
+PHASE 5 — ART DIRECTION / PALETTE
+--------------------------------------------------------------------------------
+
+STYLE: stylized low-poly / miniature diorama, flat-shaded, Cycles CPU.
+No photorealism; every surface intentional. Camera lenses 35–50mm feel.
+
+PALETTE (hex)
+  exterior pre-dawn teal ... #1B2E33    sky low ............ #27424A
+  sea ..................... #123840    wet promenade ....... #2B3A3E
+  cinema facade cream ..... #8F8574    marquee dead ........ #4A4239
+  interior near-black ..... #14100D    velvet red (desat) .. #4F2121
+  wood dark ............... #33241A    brass / copper ...... #B0803F
+  projector body .......... #2A2724    paper white ......... #F2EDE3
+  boy's raincoat YELLOW ... #E8B53A    glow warm ........... #F5D9A0
+  1953 sepia .............. #C9A25E on #6B4F2C
+
+Color arc: cold world -> first warm note = attic window (S01) -> full warm =
+beam ignition (S11) -> maximum warmth in S12 -> after shutdown, one shaft of
+sunrise pried through cloud holds the boat white-hot (S15) before the letdown.
+
+CHARACTER SILHOUETTES
+  ELIAS — long cardigan to the knees, flat cap, narrow shoulders, forearms
+  always slightly bent (a lifter's habit from reels), glasses that catch
+  light. Walk: 4/4 deliberate, heel-first.
+  THE BOY — oversized hooded raincoat (too big, hand-me-down), short legs,
+  swings his feet always, cradles the boat to his chest when running.
+
+--------------------------------------------------------------------------------
+PHASE 6 — SOUND DESIGN SUMMARY (no music; all synthesized)
+--------------------------------------------------------------------------------
+See audio build in film_main.py / audio synth section & render_log.txt.
+Key cues: neon FITZ 10.5s; stamp THUNK 92s; thunder 112/118/127s; mains
+CLUNK 132s; motor start 193s; leader flaps 243–247s; SILENCE 250–252s;
+one chime 172s (7:30); final single projector click 297.5s; 2s of near-floor
+silence to end. Sea + wind bed runs under the exterior scenes; room tone
+(interior hiss+board flex) under interiors.
