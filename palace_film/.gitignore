@@ -1,0 +1,12 @@
+# Rebuilt vendor environment — installed from PyPI at restore time, not committed
+_env/
+# Generated render output (regenerable with film_main.py)
+frames/
+frames_bench/
+logs/
+*.blend
+*.blend1
+audio.wav
+final_film.mp4
+preview.mp4
+__pycache__/
