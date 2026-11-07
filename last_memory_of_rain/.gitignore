@@ -1,0 +1,12 @@
+_env/*
+!_env/restore_env.sh
+frames/
+frames_post/
+frames_bench/
+film_project.blend
+audio.wav
+*.mp4
+render_log.txt
+__pycache__/
+*.pyc
+*.blend1
