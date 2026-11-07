@@ -20,7 +20,7 @@ Silent picture with an agent-synthesized soundtrack. Titles fade in/out in the f
 | Delivery format | Upscaled ×3 nearest to 1920×810 @ 24 fps (frame triplication) |
 | Codec | H.264 (CRF 17), yuv420p; audio AAC |
 | Engine | Blender 4.5.15 (bpy module), Cycles CPU, PRESET A (6 spp @ 640×270) |
-| Look | AgX, exposure −1.75; Bayer 4×4 36-level dither, split-tone teal/ember, S-curve, halftone on lit areas, CA, per-frame grain, vignette |
+| Look | AgX, exposure −0.9 (world 0.75); Bayer 4×4 36-level dither, split-tone teal/ember, S-curve, halftone on lit areas, CA, per-frame grain, vignette |
 | Color | Amber/copper dusk sky, deep teal shadows; halftone-dither print grade |
 
 ## Pipeline
